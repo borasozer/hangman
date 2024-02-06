@@ -17,7 +17,6 @@ cities = ["london", "birmingham", "glasgow", "liverpool", "leeds", "sheffield", 
     "worthing", "rochdale", "basingstoke", "solihull", "harlow", "bath", "southport", "maidstone", "lincoln",
     "hastings", "darlington", "londonderry county borough", "harrogate", "hartlepool", "bedford", "hemel hempstead",
     "stevenage", "saint albans", "south shields", "derry", "weston-super-mare", "halifax", "birkenhead"]
-
 turkey_cities = ["adana", "adıyaman", "afyonkarahisar", "ağrı", "amasya", "ankara", "antalya","artvin",
     "aydın", "balıkesir", "bilecik", "bingöl", "bitlis", "bolu", "burdur", "bursa", "çanakkale", "çankırı",
     "çorum", "denizli", "diyarbakır", "edirne", "elazığ", "erzincan", "erzurum", "eskişehir", "gaziantep", "giresun",
@@ -61,11 +60,9 @@ while True:
         print(f"\n       Total:({total_rem})") 
         no = input("\nChoose theme(type no):")
         while not (no == "1" or no == "2" or no == "3" or no == "4" or no == "5"):
-            no = input("\nPlease enter valid number:")
-    
+            no = input("\nPlease enter valid number:")  
         word_list = theme_dict[int(no)]
-        new = "1"
-        
+        new = "1"     
         while no in ex_themes:
             print("\nNo question left on: " + theme_list[int(no)])
             print(total_rem)
@@ -306,11 +303,3 @@ while True:
             new = input(f"\nPress enter for new word \nType 1 to change difficulty \nType 2 to change theme \nType 3 to finish")
             if not (new == "" or new == "1" or new == "2" or new == "3"):
                 print("Write a valid option.")
-
-
-
-
-
-
-
-                
